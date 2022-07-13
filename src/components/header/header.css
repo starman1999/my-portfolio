@@ -1,0 +1,97 @@
+header {
+    height: 115vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/*CTA*/
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.3rem;
+    justify-content: center;
+
+}
+
+/*header__socials*/
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+}
+
+.header__socials::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 30px;
+    background: var(--color-primary);
+    opacity: 0.5;
+    margin-top: 1rem;
+
+}
+
+.header__socials::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 30px;
+    background: var(--color-primary);
+    opacity: 0.5;
+    margin-bottom: 1rem;
+
+}
+
+/** ME */
+.me {
+    background: linear-gradient(var(--color-primary), var(--color-white));
+    width: 16rem;
+    height:  30rem;
+    
+    position: absolute;
+    left: calc(50% - 8rem);
+    margin-top: 4rem;
+    border-radius: 9rem 9rem 0 0;
+    padding: 1rem;
+}
+
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.scroll__down::after {
+    content: "\f178";
+    font-family: FontAwesome;
+    transform:rotateX(100deg);
+    margin-left: 1.5rem;
+    font-weight: 1001;
+}
+
+
+/*********MEDIA QUEIRES (medium)*/
+@media screen and (max-width: 1024px) {
+   
+    .header {
+        height: 68vh;
+    }
+ }
+
+ /*********MEDIA QUEIRES (small)*/
+@media screen and (max-width: 600px) {
+   
+    
+}
