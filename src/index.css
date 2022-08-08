@@ -13,18 +13,18 @@
  }
 
  :root {
-    --color-bg: #1F1F38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-bg: #00010D;
+    --color-bg-variant: #929EA6;
+    --color-primary: #929EA6;
+    --color-primary-variant: #515259;
     --color-white: aliceblue;
-    --color-light: rgba(255, 255, 255, 0.6);
+    --color-light: #929EA6;
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
     
-    --transition: all 400ms ease;
+    --transition: all 800ms ease;
  }
 
  html {
@@ -40,7 +40,7 @@
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-bg);
     color:#294060;
-    /*background-image: url(../src/assets/asfalt-light.png);*/
+    background-image: url(../src/assets/cccoil2.svg);
  }
 
 
@@ -52,10 +52,14 @@
  }
 
  h1,
- h2,
+ h2{
+   font-weight: 500;
+}
+
  h3,
  h4,
- h4 {
+ h4,
+ h5 {
     font-weight: 500;
  }
 
@@ -63,9 +67,17 @@
     font-size: 2.5rem;
  }
 
+ h2 {
+   font-size: 1.8rem;
+   color: var(--color-primary);
+   text-align : center;
+   font-weight: bold;
+
+
+}
+
  section {
     margin-top: 8rem;
-    height: 100vh;
  }
 
  section h2 {

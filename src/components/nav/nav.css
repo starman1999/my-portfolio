@@ -15,14 +15,21 @@ nav {
  }
 
  nav a {
-    background:  transparent;
     padding: 0.67rem;
     color: var(--color-white);
-    border-radius: 60%;
     display: flex;
-    font-size: 1.4rem;
+    font-size: 0.9rem;
 
  }
+
+nav div a{
+   color: var(--color-white);
+   display: flex;
+   font-size: 1.1rem;
+   display: inline-block;
+
+   
+}
 
  nav a:hover {
     
