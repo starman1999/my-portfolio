@@ -40,7 +40,9 @@
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-bg);
     color:#294060;
-    background-image: url(../src/assets/cccoil2.svg);
+    /*background-image: url(../src/assets/ppperspective2.svg);*/
+    background-repeat: no-repeat ;
+    background-size: 30rem;
  }
 
 

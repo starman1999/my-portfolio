@@ -1,9 +1,10 @@
 import React from 'react';
 import './about.css';
-import ME from '../../assets/me.png';
+import ME from '../../assets/me2.png';
 import  {FaAward} from 'react-icons/fa'
 import  {FiUsers} from 'react-icons/fi'
 import  {VscFolderLibrary} from 'react-icons/vsc'
+import shape3D from '../../assets/ppperspective2.svg'
 
 const About = () =>{
     return(
@@ -27,27 +28,27 @@ const About = () =>{
                         <small> 3+ Years </small>
                     </article>
 
-                    <article className='about__card'>
-                        <FiUsers className= "about__icon"/>
-                        <h5> Clients </h5>
-                        <small> 10 </small>
-                    </article>
 
                     <article className='about__card'>
                         <VscFolderLibrary className= "about__icon"/>
                         <h5> Projects </h5>
-                        <small> 20 completed </small>
+                        <small> 08 completed </small>
                     </article>
 
-                   
-                </div>
+                </div> 
 
                 <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iusto exercitationem sunt ut recusandae magnam asperiores architecto ad est iste, dolor neque voluptates, sit non aspernatur beatae tenetur. Laboriosam, modi.
+                        I'm Mounir Dekali, a passionate Graphic Designer to create quality projects for your business, This includes your website design, Logo, Brochure designs, Posters, Layouts, Social Media designs, ...etc.
+                        <br/>I will make sure that your identity design communicates the perfect message that suits your brand and differentiates it from your competitors.
+                        
                 </p>
                 <a href='#contact' className='btn btn-primary'> Let's Talk</a>
+                <img src= {shape3D} className= 'shape3D_about' alt = '3d design' />
+
+
             </div>
             </div>
+            
         </section>
     )
 }

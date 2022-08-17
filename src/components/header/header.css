@@ -43,11 +43,8 @@ header {
 
 .header__socials::before {
     content: '';
-    display: block;
     width: 6px;
     height: 30px;
-    background: var(--color-primary);
-    opacity: 0.5;
     margin-bottom: 1rem;
 
 }
@@ -63,7 +60,18 @@ header {
     margin-top: 4rem;
     border-radius: 9rem 9rem 0 0;
     padding: 1rem 1rem 0 1rem;
+
 }
+
+.shape3D {
+    position: relative;
+    bottom: 300px;
+    width: 450px;
+    right: 200px;
+}
+
+
+
 
 .scroll__down {
     position: absolute;
@@ -89,6 +97,16 @@ header {
         height: 68vh;
     }
 
+    .shape3D {
+        position: relative;
+        bottom: 300px;
+        width: 320px;
+        right: 120px;
+        
+    }
+
+    
+    
    
  }
 
@@ -103,5 +121,14 @@ header {
    .scroll__down {
        display: none;
    }
+
+
+   .shape3D {
+    position: relative;
+    bottom: 355px;
+    width: 350px;
+    right: 200px;
+    
+}
     
 }

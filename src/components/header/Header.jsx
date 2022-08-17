@@ -1,7 +1,9 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/me.png'
+import ME from '../../assets/me3.png'
+import shape3D from '../../assets/ppperspective2.svg'
+import shape3D_2 from '../../assets/ppperspective2.svg'
 
 import HeaderSocials from './HeaderSocials'
 
@@ -19,6 +21,8 @@ const Header = () => {
 
         <a href="#contact" className='scroll__down'> Scroll Down</a>
         <img src= {ME} className='me' alt="mounir dekali "/>
+        <img src= {shape3D} className='shape3D' alt="3d design "/>
+
 
        </div>
     </header>

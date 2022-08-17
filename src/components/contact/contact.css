@@ -36,11 +36,7 @@
 
 
 
-.contact__option:hover {
-    border-color: var(--color-primary);
-    background-color: rgba(0, 0, 0, 0.3);
 
-}
 
 .contact__option-icon {
     font-size: 1.5rem;
@@ -51,6 +47,7 @@
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
+    color: rgb(6, 57, 101);
 }
 
 /* FORM */
