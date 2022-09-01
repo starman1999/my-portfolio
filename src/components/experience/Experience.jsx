@@ -114,10 +114,10 @@ const Experience = () => {
 
 
             <h3> Artificial Intelligence</h3>
-            <small style={{color: "#ffffff"}} > Tools and algrithms</small>
+            <small style={{color: "#ffffff"}} > Tools and algorithms</small>
             
             <br/> 
-            <small > Image processing algorithms <br/> Machine Learning algorithms (regression - classification) <br/> OpenCV</small>
+            <small > Image processing algorithms <br/> Machine Learning algorithms (regression - classification) <br/> OpenCV <br/></small>
     
             
 

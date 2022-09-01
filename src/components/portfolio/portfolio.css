@@ -1,50 +1,131 @@
 .portfolio__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    gap: 5rem;
+
+}
+
+.image {
+    
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+.thumbs-wrapper {  
+    border: 3px solid transparent;
+    border-color: var(--color-primary-variant);
+    border-radius: 2rem;
+    width: 350px; /* cuts off the pesky extra padding */
+    height:fit-content;
+    position: relative;
+    margin-right: 1rem;
+
+ 
+}
+
+.thumbs-wrapper .portfolio__item2 .portfolio__item-cta a {
+    color: var(--color-variant);
+    border: 1px solid var(--color-primary-variant);
 }
 
 
 .portfolio__item {
-    background-color: var(--color-bg-variant);
-    padding: 1.3rem;
-    border-radius: 2rem;
-    border: 2px solid transparent;
-    transition: var(--transition);
-}
-
-.portfolio__item:hover {
     
-    border-color: var(--color-primary-variant);
-    background-color: rgba(0, 0, 0, 0.3);
+    
+    border-radius: 1.2rem;
+    transition: var(--transition);
+    margin: .5rem;
+    position: relative;
+    overflow: hidden;
+    width: 330px;
+    height: 470px;
+    
+    
 }
 
-.portfolio__item-image {
+.portfolio__item2 {
+    
+    
+    border-radius: 1.2rem;
+    transition: var(--transition);
+    margin: .5rem;
+    position: relative;
     overflow: hidden;
-    border-radius: 1rem;
+    width: 330px;
+    height: 360px;
+    background-color: white; 
+
 }
+
+
+.arrow_next {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+.arrow_prev {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
 
 .portfolio__item h3 {
     margin: 1rem 0.5rem;
+
+    color: var(--color-primary);;
+}
+
+.portfolio__item2 h3 {
+    margin: 1rem 0.5rem;
+
+    color: var(--color-variant);
+
+}
+
+.small_text {
+    display: block;
+    text-align: center;
+    margin-top: -3.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    
 }
 
 .portfolio__item-cta {
-    display: flex;
-    gap: 1em;
-    margin-bottom: 0.3rem;
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  padding-bottom: 1rem;
+  left: 6.5rem
+  
 }
 
 
 @media screen and (max-width: 1024px){
     .portfolio__container{
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         justify-content: center;
+         margin: 0 0;
     }
 }
 
 @media screen and (max-width: 600px){
     .portfolio__container{
-        grid-template-columns: 1fr;
-        gap: 1rem;
+         display: grid;
+         grid-template-columns: repeat(1, 1fr);
+         justify-content: center;
+         margin: 0 100px;
     }
 }

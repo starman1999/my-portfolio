@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
-    height: 80vh;
+    height: 70vh;
+  
 
 }
 
@@ -15,8 +16,6 @@
     display: grid;
     place-items: center;
     overflow: hidden;
-
-
     transition: var(--transition);
 }
 
@@ -50,6 +49,7 @@
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
+    height: 170px;
 }
 
 
@@ -78,10 +78,10 @@
 
 
 .shape3D_about {
-    position:relative;
-    bottom: 200px;
+    position:absolute;
+    top: 1200px;
     width: 450px;
-    left: 300px;
+    right: -50px;
     -webkit-transform: scale(-1);
     transform: scale(-1);
 }
@@ -91,27 +91,63 @@
 @media screen and (max-width: 1024px) {
 
     .about__container {
-        grid-template-columns: 1fr;
-        gap: 0;
+        height: 100vh;
     }
 
+
     .about__me {
-        width: 50%;
-        margin: 2rem auto 4rem;
+        width: 100%;
+        background: var(--color-primary);
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        transition: var(--transition);
     }
 
     .about__content p {
         margin: 1rem 0 1.5rem;
     }
+    
+    .shape3D_about {
+        position:absolute;
+        top: 1250px;
+        width: 400px;
+        right: -50px;
+        -webkit-transform: scale(-1);
+        transform: scale(-1);
+    }
+   
+}
 
-
+@media screen and (max-width: 700px) {
+    .shape3D_about {
+        position:absolute;
+        top: 1400px;
+        width: 400px;
+        right: -200px;
+        -webkit-transform: scale(-1);
+        transform: scale(-1);
+    }
 }
 
 /*********MEDIA QUEIRES (small)*/
 @media screen and (max-width: 500px) {
+
+
+    
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 0;
+        height: 130vh;
+        bottom: 0px;
+        display: block;
+    }
+
     .about__me {
         width: 65%;
         margin: 0 auto 3rem;
+      
+        
     }
 
     .about__cards {
@@ -120,7 +156,9 @@
     }
 
     .about__content {
-        text-align: center;
+        text-align: left;
+        font-size: 90%;
+        max-width: 400px;
     }
 
     .about__content p {

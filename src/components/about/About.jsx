@@ -2,7 +2,6 @@ import React from 'react';
 import './about.css';
 import ME from '../../assets/me2.png';
 import  {FaAward} from 'react-icons/fa'
-import  {FiUsers} from 'react-icons/fi'
 import  {VscFolderLibrary} from 'react-icons/vsc'
 import shape3D from '../../assets/ppperspective2.svg'
 
@@ -34,7 +33,7 @@ const About = () =>{
                         <h5> Projects </h5>
                         <small> 08 completed </small>
                     </article>
-
+                    <img src= {shape3D} className='shape3D_about' alt="3d design "/>
                 </div> 
 
                 <p>
@@ -43,8 +42,7 @@ const About = () =>{
                         
                 </p>
                 <a href='#contact' className='btn btn-primary'> Let's Talk</a>
-                <img src= {shape3D} className= 'shape3D_about' alt = '3d design' />
-
+                
 
             </div>
             </div>
