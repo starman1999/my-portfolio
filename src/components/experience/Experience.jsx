@@ -1,6 +1,5 @@
 import React from 'react'
 import './experience.css'
-import {BsPatchCheckFill} from 'react-icons/bs'
 import {SiAdobephotoshop} from 'react-icons/si'
 import {SiAdobeillustrator} from 'react-icons/si'
 import {CgFigma} from 'react-icons/cg'

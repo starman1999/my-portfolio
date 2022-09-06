@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import './portfolio.css'
 import shygger from '../../assets/shygger.png'
 import icedCoffee from '../../assets/icedcoffee.png'
@@ -28,56 +28,51 @@ import website1 from '../../assets/website/website1.png'
 import website2 from '../../assets/website/website2.png'
 import website3 from '../../assets/website/website3.png'
 import website4 from '../../assets/website/website4.png'
-import website5 from '../../assets/website/website5.png'
+import website5 from '../../assets/website/events.png'
 
 import print1 from "../../assets/print1.jpg"
 import print2 from "../../assets/print2.png"
-import print3 from "../../assets/print3.jpg"
-import print4 from "../../assets/print4.jpg"
+import print5 from "../../assets/print5.png"
+import print6 from "../../assets/print6.png"
+import print7 from "../../assets/print7.png"
 
-import {FaArrowAltCircleRight, FaArrowAltCircleLeft, FaSlidersH, FaLongArrowAltDown } from 'react-icons/fa'
+
+import {BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs'
 
 
 const logos = [
   {
     id: 1,
     image: shygger,
-    title: 'Shygger Logo Design',
 
   },
 
   {
     id: 2,
     image: icedCoffee,
-    title: 'Iced Coffee Visual Identity',
 
   },
   {
     id: 3,
     image: bloomFlowers,
-    title: 'Shygger Logo Design',
-    github: 'https://github.com/starman1999',
 
   },
 
   {
     id: 4,
     image: beautyMatch,
-    title: 'Shygger Logo Design',
  
   },
 
   {
     id: 5,
     image: asdp,
-    title: 'asdp logo design',
 
   },
 
   {
     id: 5,
     image: alton,
-    title: 'alton logo design',
 
   },
 
@@ -93,47 +88,34 @@ const magazine = [
     id: 1,
     image: mag1,
     title: 'Shygger Logo Design',
-    github: 'https://github.com/starman1999',
   },
 
   {
     id: 2,
     image: mag2,
-    title: 'Iced Coffee Visual Identity',
-    github: 'https://github.com/',
   },
   {
     id: 3,
     image: mag3,
-    title: 'Shygger Logo Design',
-    github: 'https://github.com/starman1999',
   },
 
  
   {
     id: 5,
     image: mag5,
-    title: 'Shygger Logo Design',
-    github: 'https://github.com/starman1999',
   },
 
   {
     id: 6,
     image: mag6,
-    title: 'Shygger Logo Design',
-    github: 'https://github.com/starman1999',
   },
   {
     id: 7,
     image: mag7,
-    title: 'Shygger Logo Design',
-    github: 'https://github.com/starman1999',
   },
   {
     id: 8,
     image: mag8,
-    title: 'Shygger Logo Design',
-    github: 'https://github.com/starman1999',
   }
 ]
 
@@ -143,36 +125,33 @@ const branding1 = [
   {
     id: 1,
     image: icedcoffee1,
-    behance: 'https://behance.net/altonstudio',
   },
 
   {
     id: 2,
     image: icedcoffee2,
-    behance: 'https://behance.net/altonstudio',
   },
   {
     id: 3,
     image: icedcoffee3,
-    behance: 'https://behance.net/altonstudio',
   },
 
  
   {
     id: 5,
     image: icedcoffee4,
-    behance: 'https://behance.net/altonstudio',
+
   },
 
   {
     id: 6,
     image: icedcoffee5,
-    behance: 'https://behance.net/altonstudio',
+ 
   },
   {
     id: 7,
     image: icedcoffee6,
-    behance: 'https://behance.net/altonstudio',
+
   },
 
 ]
@@ -181,31 +160,31 @@ const websiteDesign = [
   {
     id: 1,
     image: website1,
-    behance: 'https://behance.net/altonstudio',
+  
   },
 
   {
     id: 2,
     image: website2,
-    behance: 'https://behance.net/altonstudio',
+ 
   },
   {
     id: 3,
     image: website3,
-    behance: 'https://behance.net/altonstudio',
+
   },
 
  
   {
     id: 5,
     image: website4,
-    behance: 'https://behance.net/altonstudio',
+ 
   },
 
   {
     id: 6,
     image: website5,
-    behance: 'https://behance.net/altonstudio',
+
   },
 
 
@@ -216,7 +195,7 @@ const websiteDesign = [
 const prints = [
   {
     id: 1,
-    image: print1,
+    image: print6,
     behance: 'https://behance.net/altonstudio',
   },
 
@@ -227,17 +206,22 @@ const prints = [
   },
   {
     id: 3,
-    image: print3,
+    image: print1,
     behance: 'https://behance.net/altonstudio',
   },
 
  
   {
     id: 4,
-    image: print4,
+    image: print5,
     behance: 'https://behance.net/altonstudio',
   },
 
+  {
+    id: 4,
+    image: print7,
+    behance: 'https://behance.net/altonstudio',
+  },
 
 
 ]
@@ -267,10 +251,6 @@ const Portfolio = () => {
 
   
   
-
-  const autoScroll = true;
-  let slideInterval;
-  let intervalTime = 5000;
 
 
   //first slide
@@ -329,7 +309,7 @@ const Portfolio = () => {
     };
   
     const prevSlide5 = () => {
-      setCurrentSlide4(currentSlide5 === 0 ? slideLength5 - 1 : currentSlide5 - 1);
+      setCurrentSlide5(currentSlide5 === 0 ? slideLength5 - 1 : currentSlide5 - 1);
       console.log("prev");
     };
 
@@ -362,8 +342,8 @@ const Portfolio = () => {
                     <div className='thumbs-wrapper'>
 
                     <article className="portfolio__item">
-                      <FaArrowAltCircleLeft size={35} className="arrow_prev" onClick={()=>prevSlide(currentSlide, slideLength1)} />
-                    <FaArrowAltCircleRight size={35} className="arrow_next" onClick={()=>nextSlide(currentSlide, slideLength1)} />
+                      <BsFillArrowLeftCircleFill size={35} className="arrow_prev" onClick={()=>prevSlide(currentSlide, slideLength1)} />
+                    <BsFillArrowRightCircleFill size={35} className="arrow_next" onClick={()=>nextSlide(currentSlide, slideLength1)} />
                      
                       
                       <h3>Logos</h3>
@@ -410,8 +390,8 @@ const Portfolio = () => {
                        <div className='thumbs-wrapper'>
 
                       <article className="portfolio__item">
-                        <FaArrowAltCircleLeft size={40} className="arrow_prev" onClick={()=>prevSlide3(currentSlide3, slideLength3)} />
-                      <FaArrowAltCircleRight size={40} className="arrow_next" onClick={()=>nextSlide3(currentSlide3, slideLength3)} />
+                        <BsFillArrowLeftCircleFill  size={40}  className="arrow_prev" onClick={()=>prevSlide3(currentSlide3, slideLength3)} />
+                      <BsFillArrowRightCircleFill size={40} className="arrow_next" onClick={()=>nextSlide3(currentSlide3, slideLength3)} />
                         <div className='portfolio__item-image'>
                           <h3>Iced Coffee Branding</h3>
                         <img src={slide.image} alt="slide" className="image" />
@@ -420,7 +400,7 @@ const Portfolio = () => {
                         
                       </article>
                       <div className='portfolio__item-cta'>
-                      <a href={slide.github} className='btn' target="_blank"> full project </a>
+                      <a href="https://www.behance.net/gallery/137559717/Coles-Iced-Coffee-Identity-Design" className='btn' target="_blank" rel='noopener noreferrer'> full project </a>
                       </div>
                       </div>
 
@@ -463,8 +443,8 @@ const Portfolio = () => {
                        <div className='thumbs-wrapper'>
 
                       <article className="portfolio__item">
-                        <FaArrowAltCircleLeft size={40} className="arrow_prev" onClick={()=>prevSlide5(currentSlide5, slideLength5)} />
-                      <FaArrowAltCircleRight size={40} className="arrow_next" onClick={()=>nextSlide5(currentSlide5, slideLength5)} />
+                        <BsFillArrowLeftCircleFill size={40} className="arrow_prev" onClick={()=>prevSlide5(currentSlide5, slideLength5)} />
+                      <BsFillArrowRightCircleFill size={40} className="arrow_next" onClick={()=>nextSlide5(currentSlide5, slideLength5)} />
                         <div className='portfolio__item-image'>
                         <img src={slide.image} alt="slide" className="image" />
                         
@@ -511,15 +491,15 @@ const Portfolio = () => {
                      <div className='thumbs-wrapper'>
 
                     <article className="portfolio__item2">
-                      <FaArrowAltCircleLeft size={35} className="arrow_prev" onClick={()=>prevSlide2(currentSlide2, slideLength2)} />
-                      <FaArrowAltCircleRight size={35} className="arrow_next" onClick={()=>nextSlide2(currentSlide2, slideLength2)} />
+                      <BsFillArrowLeftCircleFill size={35} className="arrow_prev" onClick={()=>prevSlide2(currentSlide2, slideLength2)} />
+                      <BsFillArrowRightCircleFill size={35} className="arrow_next" onClick={()=>nextSlide2(currentSlide2, slideLength2)} />
                       
                         <h3>Magazine Design</h3>
                     
                       <img src={slide.image} alt="slide" className="image" />
                       
                       <div className='portfolio__item-cta'>
-                      <a href={slide.github} className='btn' target="_blank"> full project </a>
+                      <a href="https://www.behance.net/gallery/124178541/EXSTO-Magazine-Design" className='btn' target="_blank" rel='noopener noreferrer'> full project </a>
                       </div>
                       
                     </article>
@@ -565,10 +545,10 @@ const Portfolio = () => {
                     
                     <div className='thumbs-wrapper'>
                     
-                    <article className="portfolio__item2">
+                    <article className="portfolio__item3">
                        
-                      <FaArrowAltCircleLeft size={35} className="arrow_prev" onClick={()=>prevSlide4(currentSlide4, slideLength4)} />
-                    <FaArrowAltCircleRight size={35} className="arrow_next" onClick={()=>nextSlide4(currentSlide4, slideLength4)} />
+                      <BsFillArrowLeftCircleFill size={35} className="arrow_prev" onClick={()=>prevSlide4(currentSlide4, slideLength4)} />
+                    <BsFillArrowRightCircleFill size={35} className="arrow_next" onClick={()=>nextSlide4(currentSlide4, slideLength4)} />
                     
                       <div className='portfolio__item-image'>
                       <h3>HEC Alumni Alger Website Design</h3>
@@ -576,10 +556,7 @@ const Portfolio = () => {
 
                       </div>
                       
-                      <div className='portfolio__item-cta'>
-                      <a href={slide.github} className='btn' target="_blank"> full project </a>
-                      </div>
-
+                    
                     </article>
                    
                     </div>

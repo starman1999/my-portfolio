@@ -17,13 +17,15 @@
     border: 3px solid transparent;
     border-color: var(--color-primary-variant);
     border-radius: 2rem;
-    width: 350px; /* cuts off the pesky extra padding */
+    width: fit-content; /* cuts off the pesky extra padding */
     height:fit-content;
     position: relative;
     margin-right: 1rem;
 
  
 }
+
+
 
 .thumbs-wrapper .portfolio__item2 .portfolio__item-cta a {
     color: var(--color-variant);
@@ -59,6 +61,20 @@
 
 }
 
+.portfolio__item3 {
+    
+    
+    border-radius: 1.2rem;
+    transition: var(--transition);
+    margin: .5rem;
+    position: relative;
+    overflow: hidden;
+    width: 490px;
+    height: 360px;
+    background-color: #F2F2F2;
+
+}
+
 
 .arrow_next {
     position: absolute;
@@ -67,6 +83,8 @@
 
     cursor: pointer;
     z-index: 10;
+    border-radius: 3rem;
+    background-color: white;
 }
 
 
@@ -76,6 +94,8 @@
     left: 5%;
     cursor: pointer;
     z-index: 10;
+    border-radius: 3rem;
+    background-color: white;
 }
 
 
@@ -91,6 +111,15 @@
 
     color: var(--color-variant);
 
+
+
+}
+
+.portfolio__item3 h3 {
+    margin: 1rem 1rem -0.3rem 3.8rem;
+
+    color: var(--color-variant);
+    position:relative;
 }
 
 .small_text {
@@ -115,16 +144,51 @@
 @media screen and (max-width: 1024px){
     .portfolio__container{
          display: grid;
-         grid-template-columns: repeat(2, 1fr);
+         grid-template-columns: 310px 310px;
          justify-content: center;
-         margin: 0 0;
+         gap: 5rem;
+                
+    }
+
+    .thumbs-wrapper {  
+        border: 3px solid transparent;
+        border-color: var(--color-primary-variant);
+        border-radius: 2rem;
+        width: fit-content; /* cuts off the pesky extra padding */
+        height:fit-content;
+        position: relative;
+        margin-right: 1rem;
+    }
+
+    .portfolio__item {
+    
+    
+        border-radius: 1.2rem;
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+        width: 330px;
+        height: 470px;
+    }
+
+    .portfolio__item3 {
+    
+    
+        margin: .5rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        position: relative;
+        overflow: hidden;
+        width: 490px;
+        height: 360px;
+        background-color: #F2F2F2;
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 790px){
     .portfolio__container{
          display: grid;
-         grid-template-columns: repeat(1, 1fr);
+         grid-template-columns: 300px;
          justify-content: center;
          margin: 0 100px;
     }

@@ -2,9 +2,6 @@ import React from 'react'
 import './nav.css'
 import {AiFillHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
-import {FaBook} from 'react-icons/fa'
-import {RiServiceLine} from 'react-icons/ri'
-import {RiMessage3Fill} from 'react-icons/ri'
 import {useState} from 'react'
 
 

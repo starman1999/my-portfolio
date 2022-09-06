@@ -13,7 +13,7 @@ const HeaderSocials = () => {
         <a href='https://github.com/starman1999' target="_blank"
           rel="noopener noreferrer">  <BsGithub/> </a>
 
-        <a href='https://behance.com/altonstudio' target="_blank" 
+        <a href='https://www.behance.net/altonstudio' target="_blank" 
          rel="noopener noreferrer">  <FaBehanceSquare/> </a>
     </div>
   )

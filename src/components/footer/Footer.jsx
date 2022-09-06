@@ -8,6 +8,7 @@ import {BsFacebook} from 'react-icons/bs'
 import {AiFillBehanceCircle} from 'react-icons/ai'
 
 import {AiOutlineGithub} from 'react-icons/ai'
+import {BsLinkedin} from 'react-icons/bs'
 
 const Footer = () => {
   return (
@@ -22,6 +23,8 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
+        <a href='https://www.linkedin.com/in/mounirdekali/'target="_blank"
+          rel="noopener noreferrer"> <BsLinkedin/></a>
         <a class="fa-lg" href = "https://facebook.com/mounirdek" target="_blank"  rel="noopener noreferrer"> <BsFacebook/> </a>
         <a class="fa-lg" href = "https://instagram.com/alton.graphics" target="_blank"  rel="noopener noreferrer"> <AiOutlineInstagram/> </a>
         <a class="fa-lg" href = "https://behance.net/altonstudio" target="_blank"  rel="noopener noreferrer"> <AiFillBehanceCircle/> </a>
