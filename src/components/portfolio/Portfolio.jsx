@@ -24,11 +24,11 @@ import icedcoffee4 from '../../assets/portfolio/icedcoffee/icedcoffee4.png'
 import icedcoffee5 from '../../assets/portfolio/icedcoffee/icedcoffee5.png'
 import icedcoffee6 from '../../assets/portfolio/icedcoffee/icedcoffee6.png'
 
-import website1 from '../../assets/website/website1.png'
+/*import website1 from '../../assets/website/website1.png'
 import website2 from '../../assets/website/website2.png'
 import website3 from '../../assets/website/website3.png'
 import website4 from '../../assets/website/website4.png'
-import website5 from '../../assets/website/events.png'
+import website5 from '../../assets/website/events.png'*/
 
 import print1 from "../../assets/print1.jpg"
 import print2 from "../../assets/print2.png"
@@ -156,7 +156,7 @@ const branding1 = [
 
 ]
 
-const websiteDesign = [
+/*const websiteDesign = [
   {
     id: 1,
     image: website1,
@@ -189,7 +189,7 @@ const websiteDesign = [
 
 
 ]
-
+*/
 
 
 const prints = [
@@ -242,8 +242,8 @@ const Portfolio = () => {
   const [currentSlide3, setCurrentSlide3] = useState(0);
   const slideLength3 = branding1.length;
 
-  const [currentSlide4, setCurrentSlide4] = useState(0);
-  const slideLength4 = websiteDesign.length;
+ // const [currentSlide4, setCurrentSlide4] = useState(0);
+//  const slideLength4 = websiteDesign.length;
 
 
   const [currentSlide5, setCurrentSlide5] = useState(0);
@@ -290,7 +290,7 @@ const Portfolio = () => {
     //fourth slide
 
 
-  const nextSlide4 = () => {
+ /* const nextSlide4 = () => {
     setCurrentSlide4(currentSlide4 === slideLength4 - 1 ? 0 : currentSlide4 + 1);
     console.log("next");
   };
@@ -298,7 +298,7 @@ const Portfolio = () => {
   const prevSlide4 = () => {
     setCurrentSlide4(currentSlide4 === 0 ? slideLength4 - 1 : currentSlide4 - 1);
     console.log("prev");
-  };
+  };*/
 
      //fifth slide
 
