@@ -169,7 +169,7 @@
         position:absolute;
         top: 1400px;
         width: 400px;
-        right: -1px;
+        right: -100px;
         -webkit-transform: scale(-1);
         transform: scale(-1);
         overflow: hidden;

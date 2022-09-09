@@ -20,7 +20,7 @@
     width: fit-content; /* cuts off the pesky extra padding */
     height:fit-content;
     position: relative;
-    margin-right: 1rem;
+   
 
  
 }
@@ -157,7 +157,6 @@
         width: fit-content; /* cuts off the pesky extra padding */
         height:fit-content;
         position: relative;
-        margin-right: 1rem;
     }
 
     .portfolio__item {
@@ -187,8 +186,9 @@
 
 @media screen and (max-width: 790px){
     .portfolio__container{
-         display: block;
-         justify-content: center;
-         margin: 0 100px;
+        grid-template-columns: 1fr;
+         display: grid;
+         place-items: center;
+         margin: auto;
     }
 }
