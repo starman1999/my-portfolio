@@ -36,6 +36,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     display: grid;
+    overflow: hidden;
 }
 
 .about__card h5 {
@@ -172,6 +173,6 @@
         right: -100px;
         -webkit-transform: scale(-1);
         transform: scale(-1);
-        overflow: hidden;
+  
     }
 }
