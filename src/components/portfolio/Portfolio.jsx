@@ -32,9 +32,9 @@ import website5 from '../../assets/website/events.png?auto=compress'
 
 import print1 from "../../assets/print1.jpg?auto=compress"
 import print2 from "../../assets/print2.png?auto=compress"
-import print5 from "../../assets/print5.png?auto=compress"
-import print6 from "../../assets/print6.png?auto=compress"
-import print7 from "../../assets/print7.png?auto=compress"
+import print5 from "../../assets/print5.jpg?auto=compress"
+import print6 from "../../assets/print6.jpg?auto=compress"
+import print7 from "../../assets/print7.jpg?auto=compress"
 
 
 import {BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs'
