@@ -164,4 +164,14 @@
     .about__content p {
         margin: 1.5rem 0rem;
     }
+
+    .shape3D_about {
+        position:absolute;
+        top: 1400px;
+        width: 400px;
+        right: -1px;
+        -webkit-transform: scale(-1);
+        transform: scale(-1);
+        overflow: hidden;
+    }
 }

@@ -528,56 +528,7 @@ const Portfolio = () => {
 
 
 
-        <div>
-         {
-
-          websiteDesign.map((slide, index) => {
-
-            return (
-              <div>
-
-
-                <div
-                  className={index === currentSlide4 ? "slide current" : "slide"}
-                  key={index}>
-                  {index === currentSlide4 && (
-
-                    
-                    <div className='thumbs-wrapper'>
-                    
-                    <article className="portfolio__item3">
-                       
-                      <BsFillArrowLeftCircleFill size={35} className="arrow_prev" onClick={()=>prevSlide4(currentSlide4, slideLength4)} />
-                    <BsFillArrowRightCircleFill size={35} className="arrow_next" onClick={()=>nextSlide4(currentSlide4, slideLength4)} />
-                    
-                      <div className='portfolio__item-image'>
-                      <h3>HEC Alumni Alger Website Design</h3>
-                      <img src={slide.image} alt="slide" className="image" />
-
-                      </div>
-                      
-                    
-                    </article>
-                   
-                    </div>
-
-
-                  )}
-                </div>
-
-
-              </div>
-
-
-
-            );})
-
-
-            
-        
-        
-        }
-        </div>
+       
 
         
      

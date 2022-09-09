@@ -187,8 +187,7 @@
 
 @media screen and (max-width: 790px){
     .portfolio__container{
-         display: grid;
-         grid-template-columns: 300px;
+         display: block;
          justify-content: center;
          margin: 0 100px;
     }
