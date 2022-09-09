@@ -12,6 +12,14 @@
     overflow: hidden;
 }
 
+.image_website {
+    
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 100%;
+    height: 240px;
+}
+
 
 .thumbs-wrapper {  
     border: 3px solid transparent;
@@ -173,14 +181,12 @@
     .portfolio__item3 {
     
     
-        margin: .5rem;
-        margin-left: 10rem;
-        margin-right: 10rem;
+        border-radius: 1.2rem;
+        transition: var(--transition);
         position: relative;
         overflow: hidden;
-        width: 490px;
+        width: 330px;
         height: 360px;
-        background-color: #F2F2F2;
     }
 }
 

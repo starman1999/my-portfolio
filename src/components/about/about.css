@@ -36,7 +36,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     display: grid;
-    overflow: hidden;
 }
 
 .about__card h5 {
@@ -139,7 +138,7 @@
     .about__container {
         grid-template-columns: 1fr;
         gap: 0;
-        height: 160vh;
+        height: 135vh;
         bottom: 0px;
         display: block;
     }
@@ -170,9 +169,10 @@
         position:absolute;
         top: 1400px;
         width: 400px;
-        right: -100px;
+        right: -0px;
         -webkit-transform: scale(-1);
         transform: scale(-1);
+        display: none;
   
     }
 }
