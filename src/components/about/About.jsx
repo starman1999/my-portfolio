@@ -37,7 +37,7 @@ const About = () =>{
                 </div> 
 
                 <p>
-                        I'm Mounir Dekali, a passionate Graphic Designer to create quality projects for your business, This includes your website design, Logo, Brochure designs, Posters, Layouts, Social Media designs, ...etc.
+                        I'm Mounir Dekali, a passionate Graphic Designer to create quality projects for your business, this includes your Website Design, Logo, Brochure Designs, Posters, Layouts, Social Media Designs, ...etc.
                         <br/>I will make sure that your identity design communicates the perfect message that suits your brand and differentiates it from your competitors.
                         
                 </p>
