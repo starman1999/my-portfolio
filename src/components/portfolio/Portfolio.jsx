@@ -1,40 +1,40 @@
 import React, {useState} from 'react'
 import './portfolio.css'
-import shygger from '../../assets/shygger.png'
-import icedCoffee from '../../assets/icedcoffee.png'
-import beautyMatch from '../../assets/beautyMatche.png'
-import bloomFlowers from '../../assets/bloomflowers.png'
-import asdp from '../../assets/asdp.jpg'
-import alton from '../../assets/alton.png'
+import shygger from '../../assets/shygger.png?auto=compress'
+import icedCoffee from '../../assets/icedcoffee.png?auto=compress'
+import beautyMatch from '../../assets/beautyMatche.png?auto=compress'
+import bloomFlowers from '../../assets/bloomflowers.png?auto=compress'
+import asdp from '../../assets/asdp.jpg?auto=compress'
+import alton from '../../assets/alton.png?auto=compress'
 
 
-import mag1 from '../../assets/portfolio/mag/mag1.png'
-import mag2 from '../../assets/portfolio/mag/mag2.png'
-import mag3 from '../../assets/portfolio/mag/mag3.png'
-import mag5 from '../../assets/portfolio/mag/mag5.png'
-import mag6 from '../../assets/portfolio/mag/mag6.png'
-import mag7 from '../../assets/portfolio/mag/mag7.png'
-import mag8 from '../../assets/portfolio/mag/mag8.png'
+import mag1 from '../../assets/portfolio/mag/mag1.png?auto=compress'
+import mag2 from '../../assets/portfolio/mag/mag2.png?auto=compress'
+import mag3 from '../../assets/portfolio/mag/mag3.png?auto=compress'
+import mag5 from '../../assets/portfolio/mag/mag5.png?auto=compress'
+import mag6 from '../../assets/portfolio/mag/mag6.png?auto=compress'
+import mag7 from '../../assets/portfolio/mag/mag7.png?auto=compress'
+import mag8 from '../../assets/portfolio/mag/mag8.png?auto=compress'
 
 
-import icedcoffee1 from '../../assets/portfolio/icedcoffee/icedcoffee1.png'
-import icedcoffee2 from '../../assets/portfolio/icedcoffee/icedcoffee2.png'
-import icedcoffee3 from '../../assets/portfolio/icedcoffee/icedcoffee3.png'
-import icedcoffee4 from '../../assets/portfolio/icedcoffee/icedcoffee4.png'
-import icedcoffee5 from '../../assets/portfolio/icedcoffee/icedcoffee5.png'
-import icedcoffee6 from '../../assets/portfolio/icedcoffee/icedcoffee6.png'
+import icedcoffee1 from '../../assets/portfolio/icedcoffee/icedcoffee1.png?auto=compress'
+import icedcoffee2 from '../../assets/portfolio/icedcoffee/icedcoffee2.png?auto=compress'
+import icedcoffee3 from '../../assets/portfolio/icedcoffee/icedcoffee3.png?auto=compress'
+import icedcoffee4 from '../../assets/portfolio/icedcoffee/icedcoffee4.png?auto=compress'
+import icedcoffee5 from '../../assets/portfolio/icedcoffee/icedcoffee5.png?auto=compress'
+import icedcoffee6 from '../../assets/portfolio/icedcoffee/icedcoffee6.png?auto=compress'
 
-import website1 from '../../assets/website/website1.png'
-import website2 from '../../assets/website/website2.png'
-import website3 from '../../assets/website/website3.png'
-import website4 from '../../assets/website/website4.png'
-import website5 from '../../assets/website/events.png'
+import website1 from '../../assets/website/website1.png?auto=compress'
+import website2 from '../../assets/website/website2.png?auto=compress'
+import website3 from '../../assets/website/website3.png?auto=compress'
+import website4 from '../../assets/website/website4.png?auto=compress'
+import website5 from '../../assets/website/events.png?auto=compress'
 
-import print1 from "../../assets/print1.jpg"
-import print2 from "../../assets/print2.png"
-import print5 from "../../assets/print5.png"
-import print6 from "../../assets/print6.png"
-import print7 from "../../assets/print7.png"
+import print1 from "../../assets/print1.jpg?auto=compress"
+import print2 from "../../assets/print2.png?auto=compress"
+import print5 from "../../assets/print5.png?auto=compress"
+import print6 from "../../assets/print6.png?auto=compress"
+import print7 from "../../assets/print7.png?auto=compress"
 
 
 import {BsFillArrowRightCircleFill, BsFillArrowLeftCircleFill } from 'react-icons/bs'

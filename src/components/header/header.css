@@ -1,5 +1,5 @@
 header {
-    height: 125vh;
+    height: 80vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -95,9 +95,12 @@ header {
 /*********MEDIA QUEIRES (medium)*/
 @media screen and (max-width: 1024px) {
    
-    .header {
-        height: 68vh;
+    .header{
+    height: 80vh;
+    padding-top: 7rem;
+    overflow: hidden;
     }
+    
 
     .shape3D {
         position: relative;
