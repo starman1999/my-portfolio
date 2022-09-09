@@ -119,14 +119,9 @@
    
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1163px) {
     .shape3D_about {
-        position:absolute;
-        top: 1400px;
-        width: 400px;
-        right: -200px;
-        -webkit-transform: scale(-1);
-        transform: scale(-1);
+        display: none;
     }
 }
 
@@ -138,7 +133,7 @@
     .about__container {
         grid-template-columns: 1fr;
         gap: 0;
-        height: 135vh;
+        height: 85vh;
         bottom: 0px;
         display: block;
     }

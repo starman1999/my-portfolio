@@ -115,9 +115,13 @@ header {
  /*********MEDIA QUEIRES (small)*/
 @media screen and (max-width: 500px) {
    .header {
-    height: 100vh;
+    height: 55vh;
+    padding-top: 7rem;
+    overflow: hidden;
 
    }
+
+  
 
    .header__socials,
    .scroll__down {
