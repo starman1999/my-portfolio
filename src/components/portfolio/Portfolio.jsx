@@ -8,13 +8,13 @@ import asdp from '../../assets/asdp.jpg?auto=compress'
 import alton from '../../assets/alton.png?auto=compress'
 
 
-import mag1 from '../../assets/portfolio/mag/mag1.png?auto=compress'
-import mag2 from '../../assets/portfolio/mag/mag2.png?auto=compress'
-import mag3 from '../../assets/portfolio/mag/mag3.png?auto=compress'
-import mag5 from '../../assets/portfolio/mag/mag5.png?auto=compress'
-import mag6 from '../../assets/portfolio/mag/mag6.png?auto=compress'
-import mag7 from '../../assets/portfolio/mag/mag7.png?auto=compress'
-import mag8 from '../../assets/portfolio/mag/mag8.png?auto=compress'
+import mag1 from '../../assets/portfolio/mag/mag1.jpg?auto=compress'
+import mag2 from '../../assets/portfolio/mag/mag2.jpg?auto=compress'
+import mag3 from '../../assets/portfolio/mag/mag3.jpg?auto=compress'
+import mag5 from '../../assets/portfolio/mag/mag5.jpg?auto=compress'
+import mag6 from '../../assets/portfolio/mag/mag6.jpg?auto=compress'
+import mag7 from '../../assets/portfolio/mag/mag7.jpgauto=compress'
+import mag8 from '../../assets/portfolio/mag/mag8.jpg?auto=compress'
 
 
 import icedcoffee1 from '../../assets/portfolio/icedcoffee/icedcoffee1.png?auto=compress'
